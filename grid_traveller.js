@@ -1,4 +1,5 @@
 //Recursion
+//time complexity = O(2^n+m)
 const gridTraveller=(m,n) =>
 {
 if(m===1 && n===1)
@@ -14,6 +15,7 @@ console.log(gridTraveller(3,2));
 console.log(gridTravller(18,18));
 
 //Memoization
+//time complexity=O(n+m),space=O(m*n)
 const gridTraveller=(m,n,memo={}) =>
 {
   const key=m+','+n;
